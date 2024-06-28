@@ -20,7 +20,7 @@ const Display = () => {
         />
         </div>
       
-        <h1 className="font-bold text-3xl md:text-6xl  text-slate-100 font">
+        <h1 className="font-bold text-3xl md:text-6xl  text-slate-200 font">
           Best Prices, Best Products <br /> For Your Home
         </h1>
         <Link href="/" className="mt-5 p-4 text-sm border rounded-md flex text-white">

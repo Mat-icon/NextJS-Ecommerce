@@ -57,7 +57,7 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="w-full h-auto p-6 md:p-10  bg-slate-50">
+    <div className="w-full h-auto p-4 md:p-10  bg-slate-50">
       <div className="product">
         <div className="product-title w-full text-left">
           <h1 className="font-bold text-5xl md:text-9xl font">ALL PRODUCTS</h1>
