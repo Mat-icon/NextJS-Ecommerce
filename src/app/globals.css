@@ -37,7 +37,7 @@
     height: 80px;
     border-radius: 50%;
     background: #333;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .hero-img{
