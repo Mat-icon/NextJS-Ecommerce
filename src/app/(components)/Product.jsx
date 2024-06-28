@@ -6,37 +6,37 @@ const fetchProducts = async () => {
   return [
     {
       id: 1,
-      name: "Product 1",
+      name: "Adidas",
       description: "$45.50",
       image: "../images/5.png",
     },
     {
       id: 2,
-      name: "Product 2",
+      name: "Vans",
       description: "$39.99",
       image: "../images/4.png",
     },
     {
       id: 3,
-      name: "Product 3",
+      name: "New Balance",
       description: "$50.00",
       image: "../images/2.png",
     },
     {
       id: 4,
-      name: "Product 4",
+      name: "WayHwang",
       description: "$12.33",
       image: "../images/3.png",
     },
     {
       id: 5,
-      name: "Product 5",
+      name: "Nike",
       description: "$12.33",
       image: "../images/1.png",
     },
     {
-      id: 1,
-      name: "Product 6",
+      id: 6,
+      name: "Adidas",
       description: "$32.50",
       image: "../images/5.png",
     },
@@ -57,7 +57,7 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="w-full h-auto p-10 bg-slate-50">
+    <div className="w-full h-auto p-6 md:p-10  bg-slate-50">
       <div className="product">
         <div className="product-title w-full text-left">
           <h1 className="font-bold text-5xl md:text-9xl font">ALL PRODUCTS</h1>
@@ -67,7 +67,7 @@ const Product = () => {
             <div key={product.id} className="p-container bg-slate-100 p-4 rounded-md hover-effect relative overflow-hidden">
               <div className="product-image-container relative">
                 <img
-                  src={product.image} // Replace with your image source
+                  src={product.image}
                   alt={product.name}
                   className="product-image w-full h-full object-cover transition-transform duration-300 scale-50"
                 />
@@ -77,7 +77,7 @@ const Product = () => {
               </div>
               <div className="product-name-description flex items-center justify-between">
                 <div className="ubuntu-bold text-2xl">{product.name}</div>
-                <div className="p-description text-gray-800 text-sm">{product.description}</div>
+                <div className="p-description text-gray-800 text-sm ubuntu">{product.description}</div>
               </div>
             </div>
           ))}

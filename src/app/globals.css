@@ -33,7 +33,10 @@
     position: fixed;
     top: 1%;
     left: 4%;
-    scale: 1.1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
 }
 
 .hero-img{
@@ -54,12 +57,6 @@
     justify-content: flex-end;
 }
 
-
-
-
-
-
-  
  
   
   .product-image {

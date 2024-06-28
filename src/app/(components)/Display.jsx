@@ -12,11 +12,14 @@ const Display = () => {
     <section className="h-screen w-full relative mx-auto">
       <div className="w-full h-4/5 hero-img  flex flex-col items-center text-center justify-center p-10 ">
         {" "}
-        <img
+        <div className="logo p-1">
+            <img
           src="../images/logowhite.png"
-          className="logo w-32 h-20"
+          className="w-full h-full object-contain"
           alt="logo"
         />
+        </div>
+      
         <h1 className="font-bold text-3xl md:text-6xl  text-slate-100 font">
           Best Prices, Best Products <br /> For Your Home
         </h1>
