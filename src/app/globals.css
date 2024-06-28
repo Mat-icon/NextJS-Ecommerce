@@ -41,9 +41,9 @@
 }
 
 .hero-img{
-    background-image: url("/images/background.png");
+    background-image: url("/images/background4.png");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
  
 }
