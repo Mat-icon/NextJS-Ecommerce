@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+}
+
+
+.font{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+}
+.ubuntu{
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+.ubuntu-bold{
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+
+.logo{
+    position: fixed;
+    top: 1%;
+    left: 4%;
+    scale: 1.1;
+}
+
+.hero-img{
+    background-image: url("/images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+
+.p-container{
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(238, 237, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+  
+ 
+  
+  .product-image {
+    transition: transform 0.5s;
+  }
+  
+  .hover-effect:hover .product-image {
+    transform: scale(0.8);
+  }
+  
+  .product-info {
+    position: absolute;
+    inset: 0;
+    background: #333;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    width: 85%;
+    height: 85%;
+    margin: 30px auto;
+  }
+  
+  .hover-effect:hover .product-info {
+    opacity: 1;
+  }
+  
+  .product-name-description {
+    transition: opacity 0.3s;
+  }
+  
+  .hover-effect:hover .product-name-description {
+    opacity: 0;
+  }
+  

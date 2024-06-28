@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shopping cart
+* source:	https://sketchfab.com/3d-models/shopping-cart-1c75c94dbe15458db73006a2bde8ed0e
+* author:	pamoan10 (https://sketchfab.com/pamoan10)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shopping cart" (https://sketchfab.com/3d-models/shopping-cart-1c75c94dbe15458db73006a2bde8ed0e) by pamoan10 (https://sketchfab.com/pamoan10) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
