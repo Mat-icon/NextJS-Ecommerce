@@ -26,7 +26,7 @@ const ThreeScene2 = () => {
       camera={{ position: [30, 40, 5], fov: 25 }}
       resize={{ scroll: false }}
       gl={{ preserveDrawingBuffer: true }}
-      style={{height : "100%", width:"500px"}}
+      style={{height : "100%", width:"450px"}}
       
     >
       <ambientLight intensity={1} />

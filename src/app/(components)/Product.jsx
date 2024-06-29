@@ -126,14 +126,14 @@ const Product = () => {
               <div className="product-image-container relative">
                 <Image
                 width={500}
-                height={900}
+                height={500}
                   src={product.image}
                   alt={product.name}
                   className="product-image w-full h-full object-cover transition-transform duration-300 scale-50"
                 />
               </div>
-              <div className="product-info ubuntu  absolute inset-0 rounded-md  text-white opacity-0 transition-opacity duration-300 p-4 flex flex-col justify-end">
-                <div className="w-full ubuntu-bold text-5xl">{product.model}</div>
+              <div className="product-info ubuntu  absolute inset-0 rounded-sm  text-white opacity-0 transition-opacity duration-300 p-4 flex flex-col justify-end">
+                <div className="w-full ubuntu-bold text-3xl md:text-5xl">{product.model}</div>
                 <div className=" font-bold text-base">
                   <ul>
                     <li>Type :      {product.type}</li>

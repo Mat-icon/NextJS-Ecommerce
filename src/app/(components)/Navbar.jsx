@@ -15,7 +15,9 @@ const Navbar = () => {
 
   return (      
     <>
-    <div className={`fixed top-0 nav w-2/6 h-full bg-white z-10  transition-transform duration-300 ease-in-out ${open ? "nav" : "nav-close"}`}> </div>
+    <div className={`fixed top-0 nav w-2/6 h-full bg-white z-10  transition-transform duration-300 ease-in-out ${open ? "nav" : "nav-close"}`}>
+    
+     </div>
     <div className="bg-white hidden p-3 md:flex md:flex-col md:items-center md:justify-between">
       <div onClick={Toggle}>{open ? <Close/>: <Menu /> }</div>
 
