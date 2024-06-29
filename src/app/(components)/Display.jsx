@@ -7,15 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Product from "./Product";
 import { ShoppingBagOutlined } from "@mui/icons-material";
 import Promo from "./Promo";
+import Image from "next/image";
 
 const Display = () => {
   return (
-    <section className="h-screen w-full relative mx-auto selection:bg-emerald-400">
+    <section className="h-screen w-full relative mx-auto selection:bg-emerald-400 overflow-x-hidden">
       <div className="w-full h-4/5 hero-img  flex flex-col items-center text-center justify-center p-10 ">
         {" "}
         <div className="logo p-1 bg-emerald-700">
-            <img
-          src="../images/logowhite.png"
+            <Image
+            height={500}
+            width={500}
+          src="/images/logowhite.png"
           className="w-full h-full object-contain"
           alt="logo"
         />

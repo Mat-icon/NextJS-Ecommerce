@@ -126,7 +126,7 @@ const Product = () => {
               <div className="product-image-container relative">
                 <Image
                 width={500}
-                height={500}
+                height={900}
                   src={product.image}
                   alt={product.name}
                   className="product-image w-full h-full object-cover transition-transform duration-300 scale-50"
