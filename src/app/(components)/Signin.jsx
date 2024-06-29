@@ -5,7 +5,7 @@ import React from 'react'
 const Signin = () => {
   return (
     <div className='bg-slate-100 sign-logo w-full h-screen flex items-center justify-center'>
-        <div className="form-container w-4/5 md:w-2/5 h-auto bg-white shadow-md shadow-black p-6 flex flex-col space-y-4">
+        <div className="form-container w-11/12 md:w-2/5 h-auto bg-white shadow-md shadow-black p-6 flex flex-col space-y-4">
             <h1 className='w-full text-center text-2xl font'>Matthew&apos;s Store</h1>
             <form className='flex flex-col space-y-6 ubuntu'> 
                 <input type='email' placeholder='Enter email' className='p-2 bg-slate-50' required/>
