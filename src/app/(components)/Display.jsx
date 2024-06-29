@@ -10,7 +10,7 @@ import Promo from "./Promo";
 
 const Display = () => {
   return (
-    <section className="h-screen w-full relative mx-auto">
+    <section className="h-screen w-full relative mx-auto selection:bg-emerald-400">
       <div className="w-full h-4/5 hero-img  flex flex-col items-center text-center justify-center p-10 ">
         {" "}
         <div className="logo p-1 bg-emerald-700">
@@ -21,8 +21,8 @@ const Display = () => {
         />
         </div>
       
-        <h1 className="font-bold text-4xl md:text-7xl  text-slate-200 font">
-          Best Prices, Best Products <br /> For Your Home
+        <h1 className="font-bold  text-4xl md:text-7xl  text-slate-200 font">
+          <span className="border-l-emerald-500 border-l-4 pl-2">Best</span> prices, Best products <br /> for your Home
         </h1>
         <Link href="/" className="mt-5 p-4 text-sm border border-r-emerald-400 rounded-md flex text-white">
           Shop Now

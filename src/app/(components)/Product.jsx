@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const fetchProducts = async () => {
@@ -8,7 +9,7 @@ const fetchProducts = async () => {
       id: 1,
       name: "Adidas",
       description: "$45.50",
-      image: "../images/5.png",
+      image: "/images/5.png",
       model: "Adidas Original",
       type: "Original",
       brand: "Adidas",
@@ -18,7 +19,7 @@ const fetchProducts = async () => {
       id: 2,
       name: "Vans",
       description: "$39.99",
-      image: "../images/4.png",
+      image: "/images/4.png",
       model: "Old Skool",
       type: "Vintage",
       brand: "Vans",
@@ -28,7 +29,7 @@ const fetchProducts = async () => {
       id: 3,
       name: "New Balance",
       description: "$50.00",
-      image: "../images/2.png",
+      image: "/images/2.png",
       model: "Balance Running Shoes",
       type: "Trainers",
       brand: "New Balance",
@@ -38,7 +39,7 @@ const fetchProducts = async () => {
       id: 4,
       name: "WayHwang",
       description: "$12.33",
-      image: "../images/3.png",
+      image: "/images/3.png",
       model: "Running Shoes",
       type: "Ninja Breeze",
       brand: "WayHwang",
@@ -48,7 +49,7 @@ const fetchProducts = async () => {
       id: 5,
       name: "Nike",
       description: "$12.33",
-      image: "../images/1.png",
+      image: "/images/1.png",
       model: "Air Jordan",
       type: "Air Jordan 1",
       brand: "Nike",
@@ -58,7 +59,7 @@ const fetchProducts = async () => {
       id: 6,
       name: "Adidas",
       description: "$32.50",
-      image: "../images/5.png",
+      image: "/images/5.png",
       model: "Adidas Gazelle",
       type: "Gazelle Original",
       brand: "Adidas",
@@ -68,7 +69,7 @@ const fetchProducts = async () => {
       id: 7,
       name: "New Balance",
       description: "$50.00",
-      image: "../images/2.png",
+      image: "/images/2.png",
       model: "Balance Running Shoes",
       type: "Trainers",
       brand: "New Balance",
@@ -78,7 +79,7 @@ const fetchProducts = async () => {
       id: 8,
       name: "Nike",
       description: "$12.33",
-      image: "../images/1.png",
+      image: "/images/1.png",
       model: "Air Jordan",
       type: "Air Jordan 1",
       brand: "Nike",
@@ -88,7 +89,7 @@ const fetchProducts = async () => {
       id: 9,
       name: "Vans",
       description: "$39.99",
-      image: "../images/4.png",
+      image: "/images/4.png",
       model: "Old Skool",
       type: "Vintage",
       brand: "Vans",
@@ -114,7 +115,7 @@ const Product = () => {
     <div className="w-full h-auto p-4 md:p-10  bg-slate-50">
       <div className="product">
         <div className="product-title w-full text-left">
-          <h1 className="font-bold text-5xl md:text-9xl font g">ALL PRODUCTS<sub className="ml-4 text-2xl">{products.length}</sub></h1>
+          <h1 className="font-bold text-5xl md:text-9xl font g">ALL PRODUCTS<sub className="ml-3 text-2xl">{products.length}</sub></h1>
         </div>
         <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-20">
           {products.map((product) => (
@@ -123,7 +124,9 @@ const Product = () => {
               className="p-container bg-slate-100 p-4 rounded-md hover-effect relative overflow-hidden"
             >
               <div className="product-image-container relative">
-                <img
+                <Image
+                width={500}
+                height={500}
                   src={product.image}
                   alt={product.name}
                   className="product-image w-full h-full object-cover transition-transform duration-300 scale-50"

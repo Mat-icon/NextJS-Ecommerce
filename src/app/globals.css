@@ -47,10 +47,11 @@
 
 .image-container {
   height: 70vh;
-  background-image: url("/images/tomas-malik-XM3VSdUfXZk-unsplash.jpg");
+  background-image: url("/images/background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+ 
 }
 
 .p-container {
