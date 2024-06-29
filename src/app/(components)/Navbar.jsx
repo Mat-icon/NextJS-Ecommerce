@@ -15,40 +15,40 @@ const Navbar = () => {
 
   return (      
     <>
-    <div className={`fixed top-0 nav w-2/6 h-full bg-black z-10 shadow-lg transition-transform duration-300 ease-in-out ${open ? "nav" : "nav-close"}`}> </div>
+    <div className={`fixed top-0 nav w-2/6 h-full bg-white z-10  transition-transform duration-300 ease-in-out ${open ? "nav" : "nav-close"}`}> </div>
     <div className="bg-white hidden p-3 md:flex md:flex-col md:items-center md:justify-between">
       <div onClick={Toggle}>{open ? <Close/>: <Menu /> }</div>
 
       <div className="nav-links flex flex-col space-y-2">
         <Link href="/">
-        <RiHome4Line />
+        <RiHome4Line className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/"></Link>
         <Link href="/">
-        <ShoppingBagOutlined className="text-lg"/>
+        <ShoppingBagOutlined className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/"></Link>
         <Link href="/">
-        <LiaUserSolid />
+        <LiaUserSolid className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/"></Link>
         <Link href="/">
-        <MdOutlineAlternateEmail />
+        <MdOutlineAlternateEmail className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/"></Link>
       </div>
       <div className="social-links flex flex-col space-y-2">
         <Link href="/">
-          <X className="text-lg"/>
+          <X className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <Facebook  className="text-lg"/>
+          <Facebook  className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <WhatsApp className="text-lg"/>
+          <WhatsApp className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <Instagram className="text-lg"/>
+          <Instagram className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
       </div>
     </div>

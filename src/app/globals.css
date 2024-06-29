@@ -30,7 +30,6 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #333;
   z-index: 9999;
 }
 
@@ -46,8 +45,15 @@
   background-repeat: no-repeat;
 }
 
+.image-container {
+  height: 70vh;
+  background-image: url("/images/tomas-malik-XM3VSdUfXZk-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .p-container {
-  height: 450px;
   position: relative;
   overflow: hidden;
   background: rgb(238, 237, 237);
@@ -96,6 +102,6 @@
   right: 3.5%;
   transition: 0.5s ease-out;
 }
-.nav-close{
+.nav-close {
   right: -85%;
 }
