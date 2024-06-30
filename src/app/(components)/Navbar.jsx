@@ -29,7 +29,7 @@ const Navbar = () => {
       </ul>
       <div className="w-10/12 absolute bottom-5 font-400">
         <ul className="w-full space-y-1">
-          <li className=" w-full p-3 border-t border-t-gray-300"><Link href='/'>ABOUT MATTHEW'S STORE</Link></li>
+          <li className=" w-full p-3 border-t border-t-gray-300"><Link href='/'>ABOUT MATTHEW&apos;S STORE</Link></li>
           <li className=" w-full p-3 border-t border-t-gray-300" ><Link href='/' >SUBSCRIBE</Link></li>
           <li className=" w-full p-3 border-t border-t-gray-300"><Link href='/'>PRODUCERS</Link></li>
           <li className=" w-full p-3 border-t border-t-gray-300"><Link href='/'>CONTACT</Link></li>
