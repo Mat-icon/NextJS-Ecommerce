@@ -117,7 +117,7 @@ const Product = () => {
         <div className="product-title w-full text-left">
           <h1 className="font-bold text-5xl md:text-9xl font g">ALL PRODUCTS<sub className="ml-3 text-2xl">{products.length}</sub></h1>
         </div>
-        <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-20">
+        <div className="md:w-12/13 w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-20">
           {products.map((product) => (
             <div
               key={product.id}

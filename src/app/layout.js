@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./(components)/Navbar";
 import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
@@ -18,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body className={inter.className}>
-       <div className='flex flex-row-reverse h-screen max-h-screen'><Navbar />
+       <div className=' h-screen max-h-screen'>
         <div className='overflow-y-auto flex-grow bg-page text-default-text'>{children}</div></div> 
       </body>
     </html>

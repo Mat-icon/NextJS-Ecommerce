@@ -1,10 +1,11 @@
 import React from "react";
 import Display from "./(components)/Display";
-import Product from "./(components)/Product";
+import Navbar from "./(components)/Navbar";
 
 const page = () => {
   return (
-    <div>
+    <div className="flex flex-row-reverse">
+      <Navbar/>
       <Display />
     </div>
   );

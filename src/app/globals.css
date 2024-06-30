@@ -11,9 +11,20 @@
   font-family: "Oswald", sans-serif;
   font-weight: 800;
 }
+
+.font-400 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
 .ubuntu {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -25,17 +36,17 @@
 
 .logo {
   position: fixed;
-  top: 1%;
-  left: 4%;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0.3%;
   z-index: 9999;
 }
 
-.logo:hover {
+.logo img:hover {
   scale: 1.2;
   transition: 0.5s ease-in;
+  cursor: pointer;
 }
 
 .hero-img {
@@ -50,7 +61,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
- 
 }
 
 .p-container {
@@ -100,18 +110,23 @@
 }
 
 .nav {
-  right: 3.5%;
   transition: 0.5s ease-out;
 }
 .nav-close {
-  right: -85%;
+  transform: translateY(100%);
 }
 
-.sign-logo{
-  background-image: url('/images/logoblack.png');
+.sign-logo {
+  background-image: url("/images/logoblack.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 
+body {
+  scrollbar-width: 2px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+}
