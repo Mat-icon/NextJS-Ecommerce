@@ -111,6 +111,10 @@
 
 .nav {
   transition: 0.5s ease-out;
+  background-image: url('/images/leather.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
 }
 .nav-close {
   transform: translateY(100%);
