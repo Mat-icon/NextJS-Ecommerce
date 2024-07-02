@@ -10,7 +10,7 @@ const Promo = () => {
        
         <div className="w-full bg-transparent flex flex-col items-center p-4">
           <div className="promo-text relative top-20 text-center">
-            <h1 className="text-4xl md:text-8xl font g ">
+            <h1 className="text-4xl md:text-8xl font f ">
               Matthew&apos;s Stores <br/> Coming <span className=" ">Soon.</span>
             </h1>
             <p className="md:text-base text-xs text-slate-100 mt-4 ubuntu">

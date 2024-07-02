@@ -58,7 +58,7 @@ const Display = () => {
               <Link href="/">CONTACT</Link>
             </li>
             <li className=" w-full p-3 border-t border-t-gray-300">
-              <Link href="/">CREATE AN ACCOUNT</Link>
+              <Link href="/signup">CREATE AN ACCOUNT</Link>
             </li>
             <li className=" w-full p-3 border-t border-t-gray-300 border-b border-b-gray-300">
               <Link href="/signin">LOGIN</Link>
