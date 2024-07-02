@@ -61,16 +61,16 @@ const Navbar = () => {
       </div>
       <div className="social-links flex flex-col space-y-2" style={{color: "#333"}}>
         <Link href="/">
-          <X className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
+          <X className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 transition-all ease-in"/>
         </Link>
         <Link href="/">
-          <Facebook  className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
+          <Facebook  className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <WhatsApp className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
+          <WhatsApp className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <Instagram className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
+          <Instagram className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
         </Link>
       </div>
     </div>
