@@ -4,19 +4,19 @@ import { MdArrowRight } from "react-icons/md";
 
 const Promo = () => {
   return (
-    <div className="w-full bg-slate-50">
-      <div className="flex-col md:flex md:flex-row w-full bg-slate-200 md:w-4/5 image-container h-screen">
+    <div className="w-full h-150 bg-slate-50">
+      <div className="flex-col md:flex md:flex-col items-center w-full  image-container h-screen">
         {" "}
-        <ThreeScene2 />
-        <div className="w-full bg-transparent p-4">
-          <div className="promo-text relative top-20">
-            <h1 className="text-4xl md:text-7xl font text-slate-100">
-              Matthew&apos;s Stores Coming <span className=" ">Soon.</span>
+       
+        <div className="w-full bg-transparent flex flex-col items-center p-4">
+          <div className="promo-text relative top-20 text-center">
+            <h1 className="text-4xl md:text-8xl font g ">
+              Matthew&apos;s Stores <br/> Coming <span className=" ">Soon.</span>
             </h1>
-            <p className="md:text-base text-xs text-emerald-700 mt-3 ubuntu">
+            <p className="md:text-base text-xs text-slate-100 mt-4 ubuntu">
               Subscribe to our Newsletter for latest updates.
             </p>
-            <form className="flex items-center mt-4 w-full ubuntu">
+            <form className="flex items-center justify-center mt-4 w-full ubuntu">
               <input
                 placeholder="Email address..."
                 type="email"
@@ -28,7 +28,7 @@ const Promo = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> <ThreeScene2 />
       </div>
     </div>
   );

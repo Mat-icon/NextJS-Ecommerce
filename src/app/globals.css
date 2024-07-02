@@ -134,3 +134,7 @@ body {
 .sticky {
   position: -webkit-sticky;
 }
+
+.g{
+  -webkit-text-stroke: 1px rgb(3, 165, 3);
+}
