@@ -14,14 +14,16 @@ const Hero = () => {
   const scrollContainer = useRef(null);
 
   useEffect(() => {
-    if (scrollContainer.current) {
+    if (typeof window !== 'undefined' && scrollContainer.current) {
       lenis.on('scroll', ({ scroll }) => {
         console.log(scroll);
       });
     }
 
     return () => {
-      lenis.off('scroll');
+      if (typeof window !== 'undefined') {
+        lenis.off('scroll');
+      }
     };
   }, []);
   return (
