@@ -1,13 +1,13 @@
 import React from "react";
-import Display from "./(components)/Display";
-import Navbar from "./(components)/Navbar";
+import Hero from "./(components)/Hero";
+
 
 const page = () => {
+
   return (
-    <div className="flex flex-row-reverse">
-      <Navbar/>
-      <Display />
-    </div>
+    <>
+     <Hero/>
+    </>
   );
 };
 

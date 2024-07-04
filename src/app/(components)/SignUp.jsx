@@ -5,7 +5,7 @@ import { Google } from "@mui/icons-material";
 const SignUp = () => {
   return (
     <div className="bg-slate-100 sign-logo w-full h-screen flex items-center justify-center">
-      <div className="form-container w-11/12 md:w-2/5 h-auto bg-white shadow-md shadow-black p-6 flex flex-col space-y-4">
+      <div className="form-container w-11/12 md:w-2/5 h-auto rounded-sm bg-white shadow-md shadow-black p-6 flex flex-col space-y-4">
         <h1 className="w-full text-center text-2xl font">
           Matthew&apos;s Store
         </h1>

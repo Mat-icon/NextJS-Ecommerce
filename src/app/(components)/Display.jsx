@@ -1,16 +1,14 @@
 "use client";
-import React, { useState } from "react";
-import MyFbxModel from "./MyFbxModel";
+import React, { useState} from "react";
 import Link from "next/link";
-import Footer from "./Footer";
-import Product from "./Product";
-import { ShoppingBagOutlined } from "@mui/icons-material";
-import Promo from "./Promo";
+import { MdOutlineShoppingBag } from "react-icons/md";
 import Image from "next/image";
-import Navbar from "./Navbar";
 import { Menu, Close } from "@mui/icons-material";
 
+
 const Display = () => {
+
+
   const [open, setOpen] = useState(false);
 
   function Toggle() {
@@ -18,7 +16,8 @@ const Display = () => {
   }
 
   return (
-    <section className="w-full h-screen relative mx-auto selection:bg-emerald-400 overflow-x-hidden">
+  
+    <section className="w-full h-screen relative mx-auto overflow-x-hidden">
       <div
         className={`fixed top-0 nav w-full md:right-2 right-0 lg:w-3/12 md:w-5/12 h-full p-8  bg-white z-10  transition-transform duration-300 ease-in-out ${
           open ? "nav" : "nav-close"
@@ -90,14 +89,10 @@ const Display = () => {
           className="mt-5 p-4 text-sm border border-r-emerald-400 rounded-md flex text-white"
         >
           Shop Now
-          <ShoppingBagOutlined className="text-lg ml-1" />
+          <MdOutlineShoppingBag className="text-lg ml-1" />
         </Link>
       </div>
-
-      <MyFbxModel />
-      <Product />
-      <Promo />
-      <Footer />
+      
     </section>
   );
 };

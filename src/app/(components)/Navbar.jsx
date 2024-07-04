@@ -4,8 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { LiaUserSolid } from "react-icons/lia";
 import { RiHome4Line } from "react-icons/ri";
-import { MdOutlineAlternateEmail } from "react-icons/md";
-import {  Close, Facebook, Instagram, Menu, ShoppingBagOutlined, WhatsApp, X } from "@mui/icons-material";
+import { MdOutlineAlternateEmail,  MdOutlineShoppingBag} from "react-icons/md";
+import {  Close, Menu} from "@mui/icons-material";
+import { FaFacebook, FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -15,7 +18,6 @@ const Navbar = () => {
 
   return (      
     <>
-    
     <div className={`fixed top-0 nav w-full md:right-2 right-0 lg:w-3/12 md:w-5/12 h-full p-6  bg-white z-10  transition-transform duration-300 ease-in-out ${open ? "nav" : "nav-close"}`}>
       <ul className=" space-y-7 p-3">
         <h1 className="font text-sm" style={{color: "#333"}}>SHOP</h1>
@@ -47,7 +49,7 @@ const Navbar = () => {
         </Link>
       
         <Link href="/cart">
-        <ShoppingBagOutlined className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
+       <MdOutlineShoppingBag className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 ease-in"/>
         </Link>
        
         <Link href="/signin">
@@ -59,18 +61,18 @@ const Navbar = () => {
         </Link>
         
       </div>
-      <div className="social-links flex flex-col space-y-2" style={{color: "#333"}}>
+      <div className="social-links flex flex-col space-y-3" style={{color: "#333"}}>
         <Link href="/">
-          <X className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 transition-all ease-in"/>
+          <FaXTwitter className="text-lg hover:text-emerald-400 hover:scale-105 duration-300 transition-all ease-in"/>
         </Link>
         <Link href="/">
-          <Facebook  className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
+          <FaFacebook  className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <WhatsApp className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
+          <FaWhatsapp className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
         </Link>
         <Link href="/">
-          <Instagram className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
+          <FaInstagram className="text-lg hover:text-emerald-400 hover:scale-105 transition-all duration-300 ease-in"/>
         </Link>
       </div>
     </div>

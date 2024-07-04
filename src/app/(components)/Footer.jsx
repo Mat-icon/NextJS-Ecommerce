@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-slate-200 text-black py-10 px-10 font-300">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-         <Image src='/images/logoblack.png' alt='logo' width={500} height={500}/>
+         <Image src='/images/logoblack.png' className=' w-56 h-40' alt='logo' objectFit='center' width={500} height={500}/>
         </div>
         <div>
           <h2 className="font-bold text-lg mb-4">Customer Service</h2>

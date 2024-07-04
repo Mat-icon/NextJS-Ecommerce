@@ -4,10 +4,8 @@ import { MdArrowRight } from "react-icons/md";
 
 const Promo = () => {
   return (
-    <div className="w-full h-150 bg-slate-50">
+    <div className="w-full bg-slate-50">
       <div className="flex-col md:flex md:flex-col items-center w-full  image-container h-screen">
-        {" "}
-       
         <div className="w-full bg-transparent flex flex-col items-center p-4">
           <div className="promo-text relative top-20 text-center">
             <h1 className="text-4xl md:text-8xl font f ">

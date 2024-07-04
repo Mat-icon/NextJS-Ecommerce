@@ -115,7 +115,7 @@ const Product = () => {
     <div className="w-full h-auto p-4 md:p-10  bg-slate-50">
       <div className="product">
         <div className="product-title w-full text-left">
-          <h1 className="font-bold text-5xl md:text-9xl font g">ALL PRODUCTS<sub className="ml-3 text-2xl">{products.length}</sub></h1>
+          <h1 className="font-bold text-5xl md:text-9xl font">ALL PRODUCTS<sub className="ml-2 text-2xl">{products.length}</sub></h1>
         </div>
         <div className="md:w-12/13 w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-20">
           {products.map((product) => (
@@ -133,7 +133,7 @@ const Product = () => {
                 />
               </div>
               <div className="product-info ubuntu  absolute inset-0 rounded-sm  text-white opacity-0 transition-opacity duration-300 p-4 flex flex-col justify-end">
-                <div className="w-full ubuntu-bold text-3xl md:text-5xl">{product.model}</div>
+                <div className="w-full ubuntu-bold text-3xl md:text-5xl g">{product.model}</div>
                 <div className=" font-bold text-base">
                   <ul>
                     <li>Type :      {product.type}</li>
